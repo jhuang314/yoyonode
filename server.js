@@ -1,6 +1,7 @@
 #!/bin/env node
 //  OpenShift sample Node application
 var http = require('http');
+var express = require('express');
 
 //Get the environment variables we need.
 var ipaddr  = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
