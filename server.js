@@ -1,7 +1,6 @@
 #!/bin/env node
 //  OpenShift sample Node application
 var http = require('http');
-var express = require('express');
 
 //Get the environment variables we need.
 var ipaddr  = process.env.OPENSHIFT_NODEJS_IP || "127.0.0.1";
@@ -25,7 +24,7 @@ http.createServer(function (req, res) {
 	}
 	
   res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.write("Welcome to Node.js on OpenShift!\n\n");
+  res.write("YOYO DOJO to Node.js on OpenShift!\n\n");
   res.end("Your IP address seems to be " + addr + "\n");
 }).listen(port, ipaddr);
 console.log("Server running at http://" + ipaddr + ":" + port + "/");
