@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Rutgers Yoyo Dojo</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+
+<!-- Nav Bar -->
+
+  <div class="row">
+    <div class="twelve columns">
+      <ul class="nav-bar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tutorial.html">Tutorials</a></li>
+        <li><a href="equiptment.html">Equipment</a></li>
+        <li><a href="picture.html">Pictures</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="archives.html">Archives</a></li>
+        <li><a href="members.html">Members</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li class="active"><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <h1><center>Rutgers Yoyo Dojo </center>
+      <hr />
+    </div>
+  </div>
+
+  <!-- End Nav -->
+
+<!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+
+    <!-- Contact Details -->
+    <div class="nine columns">
+
+      <h3>Get in Touch!</h3>
+      <p>We'd love to hear from you!  <br />Any questions / random remarks are welcome!</p>
+
+      <dl class="contained tabs">
+        <dd class="active"><a href="">Contact Us</a></dd>
+      </dl>
+
+      <form method="post" action="send_form_email.php">
+        <ul class="tabs-content contained">
+          <li id="contactFormTab" class="active">
+            <div class="row collapse">
+              <div class="two columns"><label class="inline">Your Name</label></div>
+              <div class="ten columns"><input type="text" name="yourName" id="yourName" placeholder="Jane Smith" />
+              </div>
+              <div class="row collapse">
+                <div class="two columns"><label class="inline">Your Email</label></div>
+                <div class="ten columns"><input type="text" name="yourEmail" id="yourEmail" placeholder="jane@smithco.com" />
+                </div>
+
+                <label>What's up?</label>
+                <textarea rows="4" id="comments" name="comments"></textarea>
+
+                <button type="submit" class="radius button">Submit</button>
+          </li>
+        </ul>
+      </form>
+
+    </div>
+
+    <!-- End Contact Details -->
+
+
+    <!-- Sidebar -->
+
+    <div class="three columns">
+
+      <h5>Map</h5>
+
+      <!-- Clicking this placeholder fires the mapModal Reveal modal -->
+      <p>
+        <a href="" data-reveal-id="mapModal"><img src="http://placehold.it/400x280" /></a><br />
+        <a href="" data-reveal-id="mapModal">View Map</a>
+      </p>
+
+      <p>
+        International Lounge, <br />
+        Busch Campus Center<br />
+        Piscataway, NJ 08854
+      </p>
+
+    </div>
+
+    <!-- End Sidebar -->
+  </div>
+
+  <!-- End Main Content and Sidebar -->
+
+
+  <!-- Footer -->
+
+  <footer class="row">
+    <div class="twelve columns">
+      <hr />
+      <div class="row">
+        <div class="six columns">
+          <p>&copy; Copyright 2013</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- End Footer -->
+
+
+
+  <!-- Map Modal -->
+
+  <div class="reveal-modal" id="mapModal">
+    <h4>Where We Are</h4>
+    <p><img src="http://placehold.it/800x600" /></p>
+
+    <!-- Any anchor with this class will close the modal. This also inherits certain styles, which can be overriden. -->
+    <a href="#" class="close-reveal-modal">&times;</a>
+  </div>
+
+  <!-- End Modal -->
+</body>
+</html>
