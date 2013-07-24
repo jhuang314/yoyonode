@@ -35,7 +35,7 @@
       <!-- Left Nav Section -->
       <ul class="left">
 	<li class="divider"></li>
-	<li><a href="#/index">Home</a></li>
+	<li><a href="#/">Home</a></li>
 	<li class="divider"></li>
 	<li><a href="#/tutorial">Tutorials</a></li>
 	<li class="divider"></li>
@@ -112,6 +112,7 @@
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
         <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+	<script type="text/javascript" src="javascripts/vendor/custom.modernizr.js"></script>
 	<script type="text/javascript" src="javascripts/vendor/modernizr.foundation.js"></script>
 	<script type="text/javascript" src="javascripts/vendor/foundation.min.js"></script>
         <!-- <script src="javascripts/vendor/bootstrap.min.js"></script> -->
@@ -133,6 +134,13 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
 
+	<!-- Check for Zepto support, load jQuery if necessary -->
+	<script>
+	  document.write('<script src=javascripts/vendor/'
+				  + ('__proto__' in {} ? 'zepto' : 'jquery')
+				  + '.js><\/script>');
+	      $(document).foundation();
+	  </script>
 
 
 </body>
