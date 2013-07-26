@@ -15,16 +15,16 @@
       </p>
     </center>
 
-
     <center>
     <div class="large-10">
-    <form method="post" action="https://email.rutgers.edu/mailman/subscribe/yoyo_dojo">
+    <form method="post" action="https://email.rutgers.edu/mailman/subscribe/yoyo_dojo" data-abide>
       <div class="row collapse">
 	<div class="small-3 large-2 columns">
 	  <span class="prefix">Email Address:</span>
 	</div>
-	<div class="small-9 large-8 columns">
-	  <input type="text" name="email" id="email" placeholder="ColonelHenry@rutgers.edu">
+	<div class="small-9 large-8 columns email-field">
+	  <input type="email" name="email" id="email" placeholder="ColonelHenry@rutgers.edu" required>
+	  <small class="error">A valid email address is required.</small>
 	</div>
 	<div class="small-3 large-2 columns">
           <button type="submit" class="postfix radius button">Submit</button>
