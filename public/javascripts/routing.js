@@ -53,7 +53,7 @@ angular.module('app', [])
 	    .when('/members', {
 
 		templateUrl: '/javascripts/tmpl/members.html',
-		controller : 'homeCtrl',
+		controller : 'memberCtrl',
 
 	    })
 
