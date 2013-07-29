@@ -4,10 +4,15 @@ angular.module('app').controller('memberCtrl', ['$scope', '$http', function ($sc
     $http.get('/data/members.json').success(function(data) {
     	$scope.members = data;
 	$scope.numColumns = 3;
-	$scope.rows = [];
-	$scope.rows.length = Math.ceil($scope.members.length / $scope.numColumns);
-	$scope.cols = [];
-	$scope.cols.length = $scope.numColumns;    
+	$scope.current_rows = [];
+	$scope.current_rows.length = Math.ceil($scope.members.current.length / $scope.numColumns);
+	$scope.current_cols = [];
+	$scope.current_cols.length = $scope.numColumns;    
+
+	$scope.past_rows = [];
+	$scope.past_rows.length = Math.ceil($scope.members.current.length / $scope.numColumns);
+	$scope.past_cols = [];
+	$scope.past_cols.length = $scope.numColumns;    
     });
     
     $scope.orderProp = 'name';

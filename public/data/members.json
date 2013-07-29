@@ -1,57 +1,117 @@
-[
-    {
-	"name": "Name goes here",
-	"pic": "http://www.placehold.it/300x300",
-	"id": "member",
-	"position": "Club member",
-	"bio": "I really like to yoyo"
-    },
-
-    {
-	"name": "Name goes here",
-	"pic": "http://www.placehold.it/300x300",
-	"id": "member",
-	"position": "Club member 2",
-	"bio": "I really like to yoyo"
-    },
-
-    {
-	"name": "Name goes here",
-	"pic": "http://www.placehold.it/300x300",
-	"id": "member",
-	"position": "Club member 3",
-	"bio": "I really like to yoyo"
-    },
-
-    {
-	"name": "Name goes here",
-	"pic": "http://www.placehold.it/300x300",
-	"id": "member",
-	"position": "Club member 4",
-	"bio": "I really like to yoyo"
-    },
-
-    {
-	"name": "Name goes here",
-	"pic": "http://www.placehold.it/300x300",
-	"id": "member",
-	"position": "Club member 5",
-	"bio": "I really like to yoyo"
-    },
-
-    {
-	"name": "Name goes here",
-	"pic": "http://www.placehold.it/300x300",
-	"id": "member",
-	"position": "Club member 6",
-	"bio": "I really like to yoyo"
-    },
-
-    {
-	"name": "Name goes here",
-	"pic": "http://www.placehold.it/300x300",
-	"id": "member",
-	"position": "Club member 7",
-	"bio": "I really really like to yoyo"
-    }
-]
+{
+    "current" :  [
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 2",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 3",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 4",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 5",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 6",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 7",
+	    "bio": "I really really like to yoyo"
+	}
+    ],
+    
+    "past" :  [
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 2",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 3",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 4",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 5",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 6",
+	    "bio": "I really like to yoyo"
+	},
+	
+	{
+	    "name": "Name goes here",
+	    "pic": "http://www.placehold.it/300x300",
+	    "id": "member",
+	    "position": "Club member 7",
+	    "bio": "I really really like to yoyo"
+	}
+    ]
+}
