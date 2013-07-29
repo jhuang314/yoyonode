@@ -119,6 +119,7 @@
 	<script type="text/javascript" src="javascripts/vendor/modernizr.foundation.js"></script>
 	<script type="text/javascript" src="javascripts/vendor/foundation.min.js"></script>
 	<script type="text/javascript" src="javascripts/vendor/foundation/foundation.abide.js"></script>	
+	<script type="text/javascript" src="javascripts/vendor/custom.modernizr.js"></script>
         <!-- <script src="javascripts/vendor/bootstrap.min.js"></script> -->
         <script src="javascripts/plugins.js"></script>
         <script src="javascripts/main.js"></script>
