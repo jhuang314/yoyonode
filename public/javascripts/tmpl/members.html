@@ -1,34 +1,40 @@
 <!DOCTYPE html>
 
 
-<div id="myModal" class="reveal-modal">
-  <div class="row">
-    <div class="large-3 columns">
-      <img src="http://www.placehold.it/300x300">
-    </div>
-    <div class="large-6 columns">
-      <center>
-	<h2>Name Goes here.</h2>
-      </center>
-      <p class="lead">Bio.</p>
-      <p>I like to yoyo</p>
-    </div>
-    <div class="large-3 columns">
-      <img src="http://www.placehold.it/300x300">
-    </div>
-  </div>
-  <a class="close-reveal-modal">&#215;</a>
-</div>
-
-<div class="row">
-  <center>
-    <h1>Current Members</h1>
-  </center>
-</div>
 <div ng-controller="memberCtrl">
+  <div id="myModal" class="reveal-modal">
+    <div class="row">
+      <div class="large-3 columns">
+	<img ng-src="{{memberData.pic}}">
+      </div>
+      <div class="large-6 columns">
+	<center>
+	  <h2>{{memberData.name}}</h2>
+	  <h3>{{memberData.position}}</h3>
+	</center>
+	<p class="lead">Bio. </p>
+	<p>{{memberData.bio}}</p>
+      </div>
+      <div class="large-3 columns">
+	<img ng-src="{{memberData.pic}}">
+      </div>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+  
+  <div class="row">
+    <center>
+      <h1>Current Members</h1>
+    </center>
+  </div>
+  <!-- <div ng-controller="memberCtrl"> -->
   <div class="row" data-ng-repeat="row in current_rows">
     <div class="large-4 columns" data-ng-repeat="col in current_cols">
-      <a href="#" data-reveal-id="myModal"><img ng-src="{{members.current[$parent.$index * numColumns + $index].pic}}"></a>      
+      <a href="#" data-reveal-id="myModal">
+	<img ng-src="{{members.current[$parent.$index * numColumns + $index].pic}}" 
+	     ng-click="loadMember(members.current[$parent.$index * numColumns + $index]);"/>
+	<!-- <img ng-src="{{members.current[$parent.$index * numColumns + $index].pic}}"> -->
+      </a>      
       <center>
 	<small><h3>{{members.current[$parent.$index * numColumns + $index].name}}</h3></small>
 	<small><h4>{{members.current[$parent.$index * numColumns + $index].position}}</h4></small>
@@ -57,3 +63,18 @@
   </div>   
 </div>
 
+
+
+<div class="button" ng-click="modalAddWidget()">Add Widget</div>
+<div id="modalAddWidget" class="reveal-modal" reveal-modal="showModal">
+  <h6>New Widget</h6>
+  <form name="addWidgetForm" ng-submit="addWidget()">
+    <fieldset>
+      <legend>Widget Name</legend>
+      <input type="text" name="widgetValue" ng-model="ui.add_widget_value" required />
+      <span ng-show="addWidgetForm.widgetValue.$error.required">required</span>
+    </fieldset>
+    <button type="submit" class="small button right">Add Widget</button>
+    <div class="small button right secondary" ng-click="showModal = false;">Cancel</div>
+  </form>
+</div>
