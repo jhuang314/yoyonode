@@ -46,8 +46,8 @@
 	    <li class="divider"></li>
 	    <li><a href="#/events">Events</a></li>
 	    <li class="divider"></li>
-	    <li><a href="#/archives">Archives</a></li>
-	    <li class="divider"></li>
+	    <!-- <li><a href="#/archives">Archives</a></li> -->
+	    <!-- <li class="divider"></li> -->
 	    <li><a href="#/members">Members</a></li>
 	    <li class="divider"></li>
 	    <li><a href="#/about">About Us</a></li>
@@ -121,6 +121,7 @@
 	<script type="text/javascript" src="javascripts/vendor/foundation/foundation.abide.js"></script>	
 	<script type="text/javascript" src="javascripts/vendor/foundation/foundation.topbar.js"></script>	
 	<script type="text/javascript" src="javascripts/vendor/custom.modernizr.js"></script>
+	<script type="text/javascript" src="javascripts/vendor/angular-strap.min.js"></script>
         <!-- <script src="javascripts/vendor/bootstrap.min.js"></script> -->
         <script src="javascripts/plugins.js"></script>
         <script src="javascripts/main.js"></script>
