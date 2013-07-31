@@ -21,16 +21,6 @@ var app = angular.module('app').controller('memberCtrl', ['$scope', '$http', fun
 	$scope.memberData = member;
 	console.log($scope.memberData);
     }    
-    // // Create modal (returns a promise since it may have to perform an http request)
-    // var modalPromise = $modal({template: '/js/app/views/elements/modal-welcome.html', persist: true, show: false, backdrop: 'static', scope: $scope});
-    
-    // // Toggle modal
-    // $scope.showModalViaService = function() {
-    //  $q.when(modalPromise).then(function(modalEl) {
-    //      modalEl.modal('show');
-    //  });
-    // };
-    
     
     $scope.modalAddWidget = function (){
         $scope.ui = { add_widget_value: '' };
