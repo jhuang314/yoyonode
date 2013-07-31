@@ -10,55 +10,55 @@
       <div class="large-6 columns">
 	<center>
 	  <h2>{{memberData.name}}</h2>
-	  <h3>{{memberData.position}}</h2>
-</center>
-<p class="lead">Bio. </p>
-<p>{{memberData.bio}}</p>
-</div>
-<div class="large-3 columns">
-  <img ng-src="{{memberData.pic}}">
-</div>
-</div>
-<a class="close-reveal-modal">&#215;</a>
-</div>
-
-<div class="row">
-  <center>
-    <h1>Current Members</h1>
-  </center>
-</div>
-<!-- <div ng-controller="memberCtrl"> -->
-<div class="row" data-ng-repeat="row in current_rows">
-  <div class="large-4 columns" data-ng-repeat="col in current_cols">
-    <a href="#" data-reveal-id="myModal">
-      <img ng-src="{{members.current[$parent.$index * numColumns + $index].pic}}" 
-	   ng-click="loadMember(members.current[$parent.$index * numColumns + $index]);"/>
-    </a>      
-    <center>
-      <small><h3>{{members.current[$parent.$index * numColumns + $index].name}}</h3></small>
-      <small><h4>{{members.current[$parent.$index * numColumns + $index].position}}</h4></small>
-    </center>
-    
+	  <h3>{{memberData.position}}</h3>
+	</center>
+	<p class="lead">Bio. </p>
+	<p>{{memberData.bio}}</p>
+      </div>
+      <div class="large-3 columns">
+	<img ng-src="{{memberData.pic}}">
+      </div>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
   </div>
-</div>
-
-<div class="row">
-  <hr />
-  <center>
-    <h1>Past Members</h1>
-  </center>
-</div>
-<div class="row" data-ng-repeat="row in past_rows">
-  <div class="large-4 columns" data-ng-repeat="col in past_cols">
-    <a href="#" data-reveal-id="myModal">
-      <img ng-src="{{members.past[$parent.$index * numColumns + $index].pic}}" 
-	   ng-click="loadMember(members.past[$parent.$index * numColumns + $index]);"/>
-    </a>      
+  
+  <div class="row">
     <center>
-      <small><h3>{{members.past[$parent.$index * numColumns + $index].name}}</h3></small>
-      <small><h4>{{members.past[$parent.$index * numColumns + $index].position}}</h4></small>
+      <h1>Current Members</h1>
     </center>
-    
   </div>
-</div>   
+  <!-- <div ng-controller="memberCtrl"> -->
+  <div class="row" data-ng-repeat="row in current_rows">
+    <div class="large-4 columns" data-ng-repeat="col in current_cols">
+      <a href="#" data-reveal-id="myModal">
+	<img ng-src="{{members.current[$parent.$index * numColumns + $index].pic}}" 
+	     ng-click="loadMember(members.current[$parent.$index * numColumns + $index]);"/>
+      </a>      
+      <center>
+	<small><h3>{{members.current[$parent.$index * numColumns + $index].name}}</h3></small>
+	<small><h4>{{members.current[$parent.$index * numColumns + $index].position}}</h4></small>
+      </center>
+      
+    </div>
+  </div>
+  
+  <div class="row">
+    <hr />
+    <center>
+      <h1>Past Members</h1>
+    </center>
+  </div>
+  <div class="row" data-ng-repeat="row in past_rows">
+    <div class="large-4 columns" data-ng-repeat="col in past_cols">
+      <a href="#" data-reveal-id="myModal">
+	<img ng-src="{{members.past[$parent.$index * numColumns + $index].pic}}" 
+	     ng-click="loadMember(members.past[$parent.$index * numColumns + $index]);"/>
+      </a>      
+      <center>
+	<small><h3>{{members.past[$parent.$index * numColumns + $index].name}}</h3></small>
+	<small><h4>{{members.past[$parent.$index * numColumns + $index].position}}</h4></small>
+      </center>
+      
+    </div>
+  </div>   
 </div>
