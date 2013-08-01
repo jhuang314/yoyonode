@@ -17,9 +17,8 @@ var app = angular.module('app').controller('memberCtrl', ['$scope', '$http', fun
 
 
     $scope.loadMember = function (member) {
-	//you should be able to access the current member
+	// get the member data when user clicks on thumbnail
 	$scope.memberData = member;
-	console.log($scope.memberData);
     }    
     
     $scope.modalAddWidget = function (){
