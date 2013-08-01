@@ -43,7 +43,7 @@ angular.module('app', [])
 
 	    })
 
-	    .when('/events', {
+	    .when('/calendar', {
 
 		templateUrl: '/javascripts/tmpl/events.html',
 		controller : 'homeCtrl',
