@@ -17,8 +17,8 @@
   
   <!-- Included CSS Files (Compressed) -->
   <link rel="stylesheet" type="text/css" href="stylesheets/foundation.min.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/foundation.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/foundation.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css"> -->
   <link rel="stylesheet" href="stylesheets/app.css">
 
 
@@ -34,9 +34,9 @@
 	</ul>
 	<section class="top-bar-section">
 	  <!-- Left Nav Section -->
-	  <ul class="left">
+	  <ul class="left" nav-tabs>
 	    <li class="divider"></li>
-	    <li class="active"><a href="#/">Home</a></li>
+	    <li><a href="#/">Home</a></li>
 	    <li class="divider"></li>
 	    <li><a href="#/tutorial">Tutorials</a></li>
 	    <li class="divider"></li>
