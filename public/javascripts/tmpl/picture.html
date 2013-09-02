@@ -1,11 +1,23 @@
 <!DOCTYPE html>
 
-<!DOCTYPE html>
 
-
-  <div class="row">
-    <div class="twelve columns">
-      <p> Comming Soon! </p>
+<div ng-controller="pictureCtrl">
+  <div id="myModal" class="reveal-modal">
+    <div class="row">
+      <div class="large-6 columns">
+	  <img ng-src="{{pictureData.pic}}">
+      </div>
+    </div>
+    <a class="close-reveal-modal">&#215;</a>
+  </div>
+  
+  <div class="row" data-ng-repeat="row in current_rows">
+    <div class="large-4 columns" data-ng-repeat="col in current_cols">
+      <a href="#" data-reveal-id="myModal">
+	<img ng-src="{{pictures.current[$parent.$index * numColumns + $index].pic}}" 
+	     ng-click="loadPicture(pictures.current[$parent.$index * numColumns + $index]);"/>
+      </a>      
     </div>
   </div>
 
+</div>

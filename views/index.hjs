@@ -105,6 +105,7 @@
         <!-- Angularjs controller section -->
         <script type="text/javascript" src="javascripts/controller/home.js"></script>
         <script type="text/javascript" src="javascripts/controller/members.js"></script>
+        <script type="text/javascript" src="javascripts/controller/pictures.js"></script>
         <script type="text/javascript" src="javascripts/controller/missing.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
